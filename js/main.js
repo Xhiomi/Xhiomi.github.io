@@ -15,13 +15,28 @@ $(document).ready(function() {
 
 });
 
-var newContent = [
-{
-  title:"titulo",
-  content:"contenido"
-}
+// var newContent = [
+//   {
+//     title:"titulo",
+//     content:"contenido"
+//   }
+// ];
 
-]
+
+var newTitle = $("#title-info").val();
+var newContent = $("#content-info").val();
+console.log(newTitle, newContent);
+var newContentObject = {
+    title: newTitle,
+    content: newContent
+};
+
+var newContentObject = [
+  {
+    title:"titulo",
+    content:"contenido"
+  }
+];
 
 // var newContent;
 /*
@@ -85,13 +100,20 @@ function printCars() {
 // }
 
 function getNewContentData() {
-    var newTitle = $("#title-info").val();
-    var newContent = $("#content-info").val();
+    // var newTitle = $("#title-info").val();
+    // var newContent = $("#content-info").val();
     console.log(newTitle, newContent);
-    var newContentObject = {
-        title: newTitle,
-        content: newContent
-    };
+    // var newContentObject = {
+    //     title: newTitle,
+    //     content: newContent
+    // };
+
+    // var newContentObject = [
+    //   {
+    //     title:"titulo",
+    //     content:"contenido"
+    //   }
+    // ];
 
     newContent.push(newContentObject);
     printCars();
